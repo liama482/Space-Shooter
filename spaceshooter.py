@@ -62,10 +62,10 @@ class SpaceShip(Sprite):
             self.c = 0 #don't set rotation based on x motion
         else:
             if self.rx == -5: #moving left
-                self.x=self.x-10
+                self.x=self.x-20
                 self.c=1
             if self.rx == 5: #moving right
-                self.x=self.x+10
+                self.x=self.x+20
                 self.c=2
         #y motion
         if self.rya == 2 and self.ryb == 2:
@@ -73,10 +73,10 @@ class SpaceShip(Sprite):
             self.d = 0 #don't set rotation based on y motion
         else:
             if self.ry == -5: #moving up
-                self.y=self.y-10
+                self.y=self.y-20
                 self.d = 1
             if self.ry == 5: #moving down
-                self.y=self.y+10
+                self.y=self.y+20
                 self.d = 2
         
         #rotation and thrust
